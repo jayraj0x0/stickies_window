@@ -15,7 +15,7 @@ Needs Windows 10 or 11 (.NET Framework 4.8 is already built in). Rounded corners
 | Action | How |
 |---|---|
 | Menu | Right-click a note |
-| New note | `Ctrl+N` or `Ctrl+T`, the tray icon, or `Ctrl+Alt+N` from anywhere |
+| New note | `Ctrl+N` or `Ctrl+T`, the tray icon, or `Ctrl+Alt+N` from anywhere (i would suggest you change it to ALT + Shift + T it's more efficient)|
 | Reopen the last closed note | `Ctrl+Shift+T` |
 | Close note (deletes it) | `Ctrl+W` or the left box. Asks to save first |
 | Move | Drag the title bar |
