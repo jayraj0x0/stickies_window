@@ -15,7 +15,7 @@ Needs Windows 10 or 11 (.NET Framework 4.8 is already built in). Rounded corners
 | Action | How |
 |---|---|
 | Menu | Right-click a note |
-| New note | `Ctrl+N` or `Ctrl+T`, the tray icon, or `Ctrl+Alt+N` from anywhere (i would suggest you change it to ALT + Shift + T it's more efficient)|
+| New note | `Ctrl+N` or `Ctrl+T`, the tray icon, or `Alt+Shift+T` from anywhere |
 | Reopen the last closed note | `Ctrl+Shift+T` |
 | Close note (deletes it) | `Ctrl+W` or the left box. Asks to save first |
 | Move | Drag the title bar |
@@ -28,7 +28,7 @@ Needs Windows 10 or 11 (.NET Framework 4.8 is already built in). Rounded corners
 | Snap notes together | Drag a note near another one and the edges stick like magnets |
 | Move snapped notes together | Hold `Shift` while dragging a title bar |
 | Translucent | `Ctrl+Alt+T` |
-| Settings | `Ctrl+,`, or `Alt + ~` from anywhere |
+| Settings | `Ctrl+,`, or `Alt+`` ` from anywhere |
 | Bring all notes to front | `Alt+Shift+F` from anywhere, or click the tray icon |
 | Bigger / Smaller text | `Ctrl++` / `Ctrl+-` |
 | Fonts / Text color | `Ctrl+Shift+F` / `Ctrl+Shift+C` |
@@ -83,6 +83,12 @@ All of these can be changed in Settings > Formatting. Press a shortcut again to 
 
 The other 6 start empty so you can add your own, by hex code (`#FEF49C`) or RGB. Any color can be disabled, which skips it when cycling and hides it from the Color menu.
 
+If the color you picked for "Start with my color, then cycle" is disabled, new notes start with the first enabled color instead and cycle from there.
+
+Text in notes is pure black (`#000000`) by default.
+
+**Text color per note color:** in Settings > Colors, the "Aa" button under each color sets the text color used on notes of that color, for example white text on a dark blue note. It is applied when a note gets that color (new notes, or when you change a note's color from the right-click menu), and notes that already have that color switch over when you save the setting. Words you colored yourself keep their color.
+
 ### Softer colors to try
 
 If you want something gentler than the defaults, these look good too. Put them in the Custom slots in Settings > Colors (they were the defaults in earlier versions):
@@ -98,14 +104,14 @@ If you want something gentler than the defaults, these look good too. Put them i
 
 ## Settings
 
-Open with `Ctrl+,`, the tray menu, or `Alt + ~` from anywhere.
+Open with `Ctrl+,`, the tray menu, or `Alt+`` ` from anywhere.
 
 - **New notes:** color mode (cycle / random / always the same / start with my color, then cycle) and where on screen new notes open (9 positions).
 - **Colors:** edit, add and disable colors.
 - **Text:** default font, size, style and color for new notes, and what Emphasize does (extra size, optional highlight and color) for when Bold is already your normal text.
 - **Formatting:** change any formatting shortcut, the highlight color, and whether checked tasks get a strikethrough.
 - **Window:** sharp or rounded corners, title bar icons, snapping notes together.
-- **General:** start with Windows, the three shortcuts that work from anywhere (new note `Ctrl+Alt+N`, Settings `Alt + ~` and bring all to front `Alt+Shift+F`), and the notes folder.
+- **General:** start with Windows, the three shortcuts that work from anywhere (new note `Alt+Shift+T`, Settings `Alt+`` ` and bring all to front `Alt+Shift+F`), and the notes folder.
 
 ## Saving and opening
 
