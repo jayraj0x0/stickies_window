@@ -22,13 +22,14 @@ Needs Windows 10 or 11 (.NET Framework 4.8 is already built in). Rounded corners
 | Resize | Drag any edge |
 | Collapse / expand | Double-click the title bar, the far-right box, or `Ctrl+M` |
 | Full screen / back to normal size | The full screen box on the title bar, or `F11` |
-| Minimize | The minimize box on the title bar. Bring it back from the tray icon > Minimized Notes (or Bring All to Front) |
+| Minimize | The minimize box on the title bar, or `Ctrl+Shift+M`. The note goes to the taskbar like any window: click it there or use `Alt+Tab` to bring it back |
 | Keep on top | The pin on the title bar, or `Ctrl+Alt+F` |
 | Keep this note and the notes snapped to it on top | `Ctrl+Shift+Alt+F` (press again to switch it off) |
 | Snap notes together | Drag a note near another one and the edges stick like magnets |
 | Move snapped notes together | Hold `Shift` while dragging a title bar |
 | Translucent | `Ctrl+Alt+T` |
-| Settings | `Ctrl+,`, or `Alt+~` ` from anywhere |
+| Custom color for this note | `Ctrl+Shift+Alt+C` (pick by hex code or RGB) |
+| Settings | `Ctrl+,`, or `Alt+`` ` from anywhere |
 | Bring all notes to front | `Alt+Shift+F` from anywhere, or click the tray icon |
 | Bigger / Smaller text | `Ctrl++` / `Ctrl+-` |
 | Fonts / Text color | `Ctrl+Shift+F` / `Ctrl+Shift+C` |
@@ -38,7 +39,7 @@ Needs Windows 10 or 11 (.NET Framework 4.8 is already built in). Rounded corners
 | Save | `Ctrl+S` (asks where only the first time) |
 | Save As | `Ctrl+Shift+S` |
 | Print | `Ctrl+P` |
-| Images | Paste, or drag an image file onto a note |
+| Pictures | Paste, or drag an image file onto a note. Click a picture, then right-click > Picture to make it larger, smaller or fit the note |
 | Quit | Right-click the tray icon > Quit Stickies_Window |
 
 ### Formatting shortcuts
@@ -52,66 +53,49 @@ All of these can be changed in Settings > Formatting. Press a shortcut again to 
 | Highlight | `Ctrl+Shift+H` |
 | Task list: add / remove a checkbox | `Ctrl+Shift+X` |
 | Task list: check / uncheck | `Ctrl+Enter`, or click the checkbox |
-| Heading 1 / Heading 2 | `Ctrl+Shift+1` / `Ctrl+Shift+2` |
-| Emphasize (extra weight on top of bold) | `Ctrl+Shift+B` |
 
 - **Task list:** checking a task strikes through the text after the box and unchecking removes it, as one undo step (the strikethrough can be turned off in Settings).
 - **Links:** just type or paste a web address and it becomes clickable on its own.
-- **Headings:** bold + bigger text on the line.
+- **Highlight:** the color adapts to the note color and its text color so it always shows up and the text stays readable. Choose your own in Settings > Formatting if you prefer.
 
 ## Look
 
-- **Border:** a solid 2 pixel black border around every note.
-- **Corners:** sharp 90-degree corners by default, like macOS Stickies. Switch to rounded in Settings > Window.
-- **Title bar:** a full-width strip across the top of the active note. When you click away it disappears, and comes back when you click the note again. Close is on the left. On the right, from left to right: pin (keep this note on top of other windows), minimize, full screen, and collapse / expand. Icons show on the buttons when you hover the bar (can be turned off in Settings).
+- **Corners:** sharp 90-degree corners by default, like macOS Stickies, with a solid 2 pixel black border. Switch to rounded in Settings > Window: rounded notes have no border and use the soft Windows shadow instead (rounded corners need Windows 11).
+- **Title bar:** a full-width strip across the top of the active note. Its shade and icons adapt to the note color and text color (lighter on dark notes, darker on light notes). When you click away it disappears, and comes back when you click the note again. Close is on the left. On the right, from left to right: pin (keep this note on top of other windows), minimize, full screen, and collapse / expand. Icons show on the buttons when you hover the bar (can be turned off in Settings).
+- **Pictures:** pasted or dropped pictures are scaled once to fit the note, with good quality, and stored compactly, so notes stay light and pictures stay sharp. They sit inline in the text (you can type before and after them on the same line); the text box can't make text flow around or over a picture.
 - **Scrollbar:** a thin macOS-style overlay scrollbar. It is just a rounded translucent thumb, fades in when you scroll or move the mouse near the right edge, and fades out when you stop. Drag it, or click next to it to jump.
 - **Text cursor:** thin, rounded, same color as the text, blinking half a second on and off, like macOS. Can be switched back to the normal Windows cursor in Settings > Text.
 - **Snapping:** notes stick to each other's edges when you drag them close. Can be turned off in Settings > Window. Hold `Shift` while dragging to move every note that is snapped together as one group.
 
 ## Colors
 
-12 slots. The first 6 are the exact colors macOS Stickies uses:
+18 slots: 6 built-in and 12 of your own (they start empty). The built-in colors, and the text color that goes with each:
 
-| Color | Hex | RGB |
+| Name | Color | Text |
 |---|---|---|
-| Yellow | `#FEF49C` | rgb(254, 244, 156) |
-| Blue | `#ADF4FF` | rgb(173, 244, 255) |
-| Green | `#B2FFA0` | rgb(178, 255, 160) |
-| Pink | `#FFC7C7` | rgb(255, 199, 199) |
-| Purple | `#B6CAFF` | rgb(182, 202, 255) |
-| Gray | `#EEEEEE` | rgb(238, 238, 238) |
+| Yellow | `#FFFF00` | black |
+| Blue | `#0000FF` | white `#FFFFFF` |
+| Green | `#00FF64` | black |
+| Cyan | `#00FFFF` | black |
+| Dark Brown | `#400000` | `#FFECD3` |
+| Beige | `#F3E6D8` | `#4E3D42` |
 
-The other 6 start empty so you can add your own, by hex code (`#FEF49C`) or RGB. Any color can be disabled, which skips it when cycling and hides it from the Color menu.
-
-If the color you picked for "Start with my color, then cycle" is disabled, new notes start with the first enabled color instead and cycle from there.
-
-Text in notes is pure black (`#000000`) by default.
-
-**Text color per note color:** in Settings > Colors, the "Aa" button under each color sets the text color used on notes of that color, for example white text on a dark blue note. It is applied when a note gets that color (new notes, or when you change a note's color from the right-click menu), and notes that already have that color switch over when you save the setting. Words you colored yourself keep their color.
-
-### Softer colors to try
-
-If you want something gentler than the defaults, these look good too. Put them in the Custom slots in Settings > Colors (they were the defaults in earlier versions):
-
-| Color | Hex | RGB |
-|---|---|---|
-| Soft Yellow | `#F3E4AA` | rgb(243, 228, 170) |
-| Soft Blue | `#C9DBE8` | rgb(201, 219, 232) |
-| Soft Green | `#CFE0C3` | rgb(207, 224, 195) |
-| Soft Pink | `#EED3D3` | rgb(238, 211, 211) |
-| Soft Purple | `#DCD3E8` | rgb(220, 211, 232) |
-| Soft Gray | `#E2E0DC` | rgb(226, 224, 220) |
+- **Your own colors:** in Settings > Colors, click a square and enter a hex code (`#FEF49C`) or RGB values.
+- **Names:** every color's name can be changed (type in the box under its square), so a color called "Yellow" can be turned into whatever it really is. The names show up in the right-click Color menu and in Settings.
+- **Disable:** a disabled color is skipped when cycling and hidden from the Color menu.
+- **Start with my color:** if the color picked for "Start with my color, then cycle" is disabled, new notes start with the first enabled color instead and cycle from there.
+- **Text color per note color:** the "Aa" button under each color sets the text color used on notes of that color. It is applied when a note gets that color (new notes, or when you change a note's color from the right-click menu), and notes that already have that color switch over when you save the setting. Words you colored yourself keep their color. Everything else uses pure black (`#000000`) by default.
 
 ## Settings
 
-Open with `Ctrl+,`, the tray menu, or `Alt+~` ` from anywhere.
+Open with `Ctrl+,`, the tray menu, or `Alt+`` ` from anywhere.
 
 - **New notes:** color mode (cycle / random / always the same / start with my color, then cycle) and where on screen new notes open (9 positions).
-- **Colors:** edit, add and disable colors.
-- **Text:** default font, size, style and color for new notes, and what Emphasize does (extra size, optional highlight and color) for when Bold is already your normal text.
-- **Formatting:** change any formatting shortcut, the highlight color, and whether checked tasks get a strikethrough.
+- **Colors:** edit, add, name and disable colors, and set the text color for each.
+- **Text:** default font, size, style and color for new notes, and the text cursor.
+- **Formatting:** change any formatting shortcut, the highlight color (Auto by default), and whether checked tasks get a strikethrough.
 - **Window:** sharp or rounded corners, title bar icons, snapping notes together.
-- **General:** start with Windows, the three shortcuts that work from anywhere (new note `Alt+Shift+T`, Settings `Alt+~` ` and bring all to front `Alt+Shift+F`), and the notes folder.
+- **General:** start with Windows, the three shortcuts that work from anywhere (new note `Alt+Shift+T`, Settings `Alt+`` ` and bring all to front `Alt+Shift+F`), and the notes folder.
 
 ## Saving and opening
 
