@@ -68,16 +68,18 @@ All of these can be changed in Settings > Formatting. Press a shortcut again to 
 
 ## Colors
 
-18 slots: 6 built-in and 12 of your own (they start empty). The built-in colors, and the text color that goes with each:
+18 slots: 6 built-in and 12 of your own (they start empty). The built-in colors:
 
 | Name | Color | Text |
 |---|---|---|
-| Yellow | `#FFFF00` | black |
-| Blue | `#0000FF` | white `#FFFFFF` |
-| Green | `#00FF64` | black |
-| Cyan | `#00FFFF` | black |
-| Dark Brown | `#400000` | `#FFECD3` |
-| Beige | `#F3E6D8` | `#4E3D42` |
+| Yellow | `#F2E6B3` | black |
+| Pink | `#E3D0CC` | black |
+| Gray | `#BFBEBD` | black |
+| Beige | `#D8D3C9` | black |
+| Blue | `#99B9C6` | black |
+| Green | `#A9B4A1` | black |
+
+A muted Morandi palette: pale yellow like aged paper, dusty pink, neutral gray, warm beige, serene blue and soft sage green.
 
 - **Your own colors:** in Settings > Colors, click a square and enter a hex code (`#FEF49C`) or RGB values.
 - **Names:** every color's name can be changed (type in the box under its square), so a color called "Yellow" can be turned into whatever it really is. The names show up in the right-click Color menu and in Settings.
@@ -96,6 +98,12 @@ Open with `Ctrl+,`, the tray menu, or `Alt+`` ` from anywhere.
 - **Formatting:** change any formatting shortcut, and whether checked tasks get a strikethrough.
 - **Window:** sharp or rounded corners, title bar icons, snapping notes together.
 - **General:** start with Windows, the three shortcuts that work from anywhere (new note `Alt+Shift+T`, Settings `Alt+`` ` and bring all to front `Alt+Shift+F`), and the notes folder.
+
+**How a fresh install starts:** font Consolas 17.25 pt, new notes open in the center of the screen, and the new-note color mode is "Start with my color, then cycle" (Yellow first, then the rest in order).
+
+**Reset to defaults:** every tab of Settings has a "Reset to defaults" button, and there is a "Reset all to defaults" button at the bottom. They put the settings back to how they were on the very first start (colors and their names, text and highlight colors, fonts, shortcuts, window options, the notes folder, and so on). Nothing is applied until you press OK, so Cancel undoes a reset.
+
+On the Colors tab, "Reset to defaults" only resets the 6 built-in colors (and their names, text and highlight colors) and leaves your custom colors alone. The "Empty All Custom Slots" button next to it clears the 12 custom colors. The bottom "Reset all to defaults" button does both.
 
 ## Saving and opening
 
